@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using WebAPI_DT_3k.App_Start;
 
 namespace WebAPI_DT_3k
 {
@@ -13,6 +14,10 @@ namespace WebAPI_DT_3k
             //Anular Salida XML
             // config.Formatters.Remove(config.Formatters.XmlFormatter);
             // Rutas de API web
+
+            //Configuración Cors
+            config.EnableCors(new AccessPolicyCors());
+
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
