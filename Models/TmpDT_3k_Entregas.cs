@@ -64,8 +64,7 @@ namespace WebAPI_DT_3k.Models
 
         public DateTime? Entrega_Fec { get; set; }
 
-        [StringLength(120)]
-        public string Foto { get; set; }
+        public Byte[] Foto { get; set; }
 
         public double? Lat { get; set; }
 
