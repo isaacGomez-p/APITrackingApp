@@ -8,7 +8,7 @@ namespace WebAPI_DT_3k.Models
     public partial class Model_DT_3k : DbContext
     {
         public Model_DT_3k()
-            : base("name=Model_DT_3k")
+            : base("name=conexion")
         {
         }
 
